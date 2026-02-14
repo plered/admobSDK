@@ -47,16 +47,18 @@ afterEvaluate {
     publishing {
         publications {
             release(MavenPublication) {
-                from components.release
-                
-                groupId = 'com.github.plered'  // Ganti dengan username GitHub Anda
+                // Use artifact instead of components for AGP 8.3 compatibility
+                groupId = 'com.github.plered'
                 artifactId = 'alienads'
-                version = '2.0.1'  // Versi library Anda
+                version = '2.0.1'
+                
+                // Add AAR artifact
+                artifact("$buildDir/outputs/aar/${project.getName()}-release.aar")
                 
                 pom {
                     name = 'AlienAds SDK'
                     description = 'Advanced AdMob SDK wrapper with mediation support for Android'
-                    url = 'https://github.com/plered/admobSDK'  // Ganti dengan repo URL Anda
+                    url = 'https://github.com/plered/admobSDK'
                     
                     licenses {
                         license {
@@ -67,9 +69,9 @@ afterEvaluate {
                     
                     developers {
                         developer {
-                            id = 'plered'  // Ganti dengan username Anda
-                            name = 'plered'    // Ganti dengan nama Anda
-                            email = 'bobthea@gmail.com'  // Ganti dengan email Anda
+                            id = 'plered'
+                            name = 'plered'
+                            email = 'bobthea@gmail.com'
                         }
                     }
                     
