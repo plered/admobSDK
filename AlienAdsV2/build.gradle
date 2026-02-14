@@ -51,7 +51,7 @@ afterEvaluate {
                 
                 groupId = 'com.github.plered'  // Ganti dengan username GitHub Anda
                 artifactId = 'alienads'
-                version = '2.0.0'  // Versi library Anda
+                version = '2.0.1'  // Versi library Anda
                 
                 pom {
                     name = 'AlienAds SDK'
