@@ -3,6 +3,7 @@ plugins {
 }
 
 android {
+    namespace 'com.kimganteng.myapplication'
     compileSdk 36
 
     defaultConfig {
