@@ -5,10 +5,10 @@ plugins {
 
 android {
     namespace 'com.aliendroid.alienads'
-    compileSdkVersion 36
+    compileSdkVersion 34
     defaultConfig {
         minSdkVersion 23
-        targetSdkVersion 36
+        targetSdkVersion 34
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
