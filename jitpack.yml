@@ -1,4 +1,5 @@
 jdk:
   - openjdk11
-before_install:
-  - ./scripts/prepareJitpackEnvironment.sh || true
+install:
+  - echo "Building only AlienAdsV2 module"
+  - ./gradlew :AlienAdsV2:clean :AlienAdsV2:build :AlienAdsV2:publishToMavenLocal -x test -x lint
