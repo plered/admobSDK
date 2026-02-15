@@ -56,8 +56,8 @@ afterEvaluate {
                 artifactId = 'alienads'
                 version = '2.0.2'
                 
-                // Add AAR artifact
-                artifact("$buildDir/outputs/aar/${project.getName()}-release.aar")
+                // Add AAR artifact with explicit task dependency
+                artifact(tasks.named("bundleReleaseAar"))
                 
                 pom {
                     name = 'AlienAds SDK'
