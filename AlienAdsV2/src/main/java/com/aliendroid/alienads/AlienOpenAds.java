@@ -146,7 +146,6 @@ public class AlienOpenAds implements LifecycleObserver, Application.ActivityLife
                     context,
                     IDOPEN,
                     request,
-                    AppOpenAd.APP_OPEN_AD_ORIENTATION_PORTRAIT,
                     new AppOpenAd.AppOpenAdLoadCallback() {
                         /**
                          * Called when an app open ad has loaded.

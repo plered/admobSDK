@@ -1,6 +1,6 @@
 package com.aliendroid.alienads;
 
-import static androidx.constraintlayout.motion.utils.Oscillator.TAG;
+
 
 import android.app.Activity;
 import android.content.ContentValues;
@@ -92,7 +92,7 @@ public class AliendroidIntertitial {
                             onLoadInterstitialAdmob.onInterstitialAdLoaded();
                         }
                         mInterstitialAd = interstitialAd;
-                        Log.i(TAG, "onAdLoaded");
+                        Log.i(ContentValues.TAG, "onAdLoaded");
 
                     }
                     @Override
@@ -100,7 +100,7 @@ public class AliendroidIntertitial {
                         if (onLoadInterstitialAdmob!=null) {
                             onLoadInterstitialAdmob.onInterstitialAdFailedToLoad("");
                         }
-                        Log.d(TAG, loadAdError.toString());
+                        Log.d(ContentValues.TAG, loadAdError.toString());
                         mInterstitialAd = null;
 
                     }

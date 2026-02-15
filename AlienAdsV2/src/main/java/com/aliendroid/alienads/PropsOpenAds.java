@@ -127,7 +127,6 @@ public class PropsOpenAds implements LifecycleObserver, Application.ActivityLife
                 isLoadingAd = true;
                 AdRequest request = new AdRequest.Builder().build();
                 AppOpenAd.load(context, IDOPEN, request,
-                        AppOpenAd.APP_OPEN_AD_ORIENTATION_PORTRAIT,
                         new AppOpenAd.AppOpenAdLoadCallback() {
                             @Override
                             public void onAdLoaded(AppOpenAd ad) {
@@ -161,7 +160,6 @@ public class PropsOpenAds implements LifecycleObserver, Application.ActivityLife
                 isLoadingAd = true;
                 AdRequest request = new AdRequest.Builder().build();
                 AppOpenAd.load(context, IDOPEN, request,
-                        AppOpenAd.APP_OPEN_AD_ORIENTATION_PORTRAIT,
                         new AppOpenAd.AppOpenAdLoadCallback() {
                             @Override
                             public void onAdLoaded(AppOpenAd ad) {
