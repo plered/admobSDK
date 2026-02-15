@@ -1,5 +1,5 @@
 jdk:
-  - openjdk11
+  - openjdk17
 install:
   - echo "Building only AlienAdsV2 module"
   - ./gradlew :AlienAdsV2:clean :AlienAdsV2:build :AlienAdsV2:publishToMavenLocal -x test -x lint
