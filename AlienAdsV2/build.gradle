@@ -5,10 +5,10 @@ plugins {
 
 android {
     namespace 'com.aliendroid.alienads'
-    compileSdkVersion 34
+    compileSdk 36
     defaultConfig {
-        minSdkVersion 23
-        targetSdkVersion 34
+        minSdk 23
+        targetSdk 36
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -54,7 +54,7 @@ afterEvaluate {
                 // Use artifact instead of components for AGP 8.3 compatibility
                 groupId = 'com.github.plered'
                 artifactId = 'alienads'
-                version = '2.0.3'
+                version = '2.0.4'
                 
                 // Add AAR artifact with explicit task dependency
                 artifact(tasks.named("bundleReleaseAar"))
